@@ -11,7 +11,7 @@ lesson: overview, creation, manipulation, retrieval
 # Hashes
 
 ## Introduction
-* "Hashes are a lot like arrays: they havea bunch of slots that can point to various objects. However, in an array, theslots are lined up in a row, and each one is numbered (starting from zero). In a hash, the slots aren’t in a row (they are just sort of jumbled together) and you can use any object to refer to a slot, not just a number." - From [Chris Pine's Learn to Program, page 108](http://books.flatironschool.com/books/43?page=108)
+* "Hashes are a lot like arrays: they have a bunch of slots that can point to various objects. However, in an array, the slots are lined up in a row, and each one is numbered (starting from zero). In a hash, the slots aren’t in a row (they are just sort of jumbled together) and you can use any object to refer to a slot, not just a number." - From [Chris Pine's Learn to Program, page 108](http://books.flatironschool.com/books/43?page=108)
 
 ## Structure
 * Hashes are structured with keys and values.
