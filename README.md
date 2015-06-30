@@ -10,6 +10,18 @@ lesson: overview, creation, manipulation, retrieval
 
 # Hashes
 
+1. intro: what? why?
+2. creation
+3. accessing
+4. adding
+5. coming up: manipulating and iterating
+
+Then, repl to 1. create, 2. access, 3. add 
+
+Next reading: manipulating and iterating over hashes readme and repl to get familiar with iteration, using some helpful hash methods and reading docs on hashes. Then, key for min value lab
+
+Next reading: building nested hashes + repl . Then, simple nesting lab (re-do b/c coding in spec file 
+
 ## Introduction
 * "Hashes are a lot like arrays: they have a bunch of slots that can point to various objects. However, in an array, the slots are lined up in a row, and each one is numbered (starting from zero). In a hash, the slots aren’t in a row (they are just sort of jumbled together) and you can use any object to refer to a slot, not just a number." - From [Chris Pine's Learn to Program, page 108](http://books.flatironschool.com/books/43?page=108)
 
