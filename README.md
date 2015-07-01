@@ -1,16 +1,15 @@
 # Hashes
 
-1. intro: what? why?
-2. creation
-3. accessing
-4. adding
-5. coming up: manipulating and iterating
+## Objectives
 
-Then, repl to 1. create, 2. access, 3. add 
+We're going to introduce a new data structure, one that is more complicated than arrays. Hashes will occupy us for the next several lessons and there's a lot to cover. This lesson, which includes code challenges, covers the following:
 
-Next reading: manipulating and iterating over hashes readme and repl to get familiar with iteration, using some helpful hash methods and reading docs on hashes. Then, key for min value lab
+1. Introduction: what are hashes and what do we need them for?
+2. Creating
+3. Retrieval
+4. Adding Data to Hashes
 
-Next reading: building nested hashes + repl . Then, simple nesting lab (re-do b/c coding in spec file 
+In the upcoming lessons, we'll go over how to iterate over and manipulate hashes and how to build more complex, or nested, hashes. 
 
 ## Introduction
 > Hashes are a lot like arrays: they have a bunch of slots that can point to various objects. However, in an array, the slots are lined up in a row, and each one is numbered (starting from zero). In a hash, the slots aren’t in a row (they are just sort of jumbled together) and you can use any object to refer to a slot, not just a number. 
@@ -20,7 +19,7 @@ Next reading: building nested hashes + repl . Then, simple nesting lab (re-do b/
 
 Up until this point, we've stored our data in list-form using arrays. Let's take a look at an example where an array would not be sufficient to meet our storage needs.
 
-## Example: Customs Inspector
+### Example: Customs Inspector
 
 ![Herman Melville](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Herman_Melville.jpg/160px-Herman_Melville.jpg)
 
@@ -92,7 +91,7 @@ Let's practice by making some hashes below:
 
 %%% 
 
-## Constructing Hashes
+### Constructing Hashes
 
 Use the literal constructor to set the variable, `my_hash`, equal to a hash with key/value pairs of your choice. Remember, key/values pairs are associative. It doesn't make sense to have a key/value pair of `"my_name" => 78`. It *does* make sense to have a key/value pair of `"my_name" => "Herman Melville"` (if you happen to be that author, of course). 
 
@@ -105,36 +104,108 @@ my_hash = {"my_name" => "Herman Melville", "my_novel" => "Moby Dick}
 
 ~~~validation 
 
-assert.StrictEqual(response, 
+assert_kind_of( Hash, response ); 
 
 ```
 ## Retrieval
-* Retrieving data is similar to retrieving data from an array but instead of giving the index number in brackets, you give the name of the key.
+
+Retrieving data is similar to retrieving data from an array but instead of giving the index number in brackets, you give the name of the key. If an array is a list in which we access index items by their number, a hash is a dictionary in which we access values by their key. 
 
 ```ruby
-positions = {:office_manager => "Carley", :coo => "Kristi", :placements => "Jackie"}
-puts positions[:office_manager]
-#  └── Carley
+pets = {:cat => "Maru", :dog => "Pluto"}
+
+pets[:cat]
+  => "Maru"
 ```
 
-## Manipulation
-* Instead of  `<<` shovel method, hashes use an `[:key]=` method to add data. Say we want to add the key of :content and have it point to value of "Stephanie". We would simply write the second line of code below:
+%%%
+
+### Retrieving data from hashes 
+
+Below, create a hash called `shipping_manifest` and fill it with key/value pairs the describe the following information: We have 5 whale bone corsets, 2 porcelain vases and 3 oil paintings. Then access the value of the first key/value pair by using the syntax described above. 
 
 ```ruby
-positions = {:office_manager => "Carley", :coo => "Kristi", :placements => "Jackie"}
-positions[:content] = "Stephanie"
-puts positions.inspect
-#  └── {:office_manager=>"Carley", :coo=>"Kristi", :placements=>"Jackie", :content=>"Stephanie"}
+shipping_manifest = #code your hash here!
+
+first_value = #access the value of the first key/value pair here!
+
+~~~solution
+
+shipping_manifest = {
+  "whale bone corset" => 5, 
+  "porcelain vase" => 2, 
+  "oil painting" => 3
+}
+
+first_value = shipping_manifest["whale bone corset"]
+
+~~~validation 
+
+assert.strictEqual(response, 5)
 ```
-* To add data, you call the name of the hash, followed by a beginning bracket, followed by the name of the new key, followed by a closing bracket, followed by an equals sign, followed by the name of the new value.
 
-## Example
-* Just like arrays, hashes can contain integers, strings, arrays, hashes, and more. Here's an example using Flatiron School:
+## Adding Objects to Hashes
+Adding items to hashes is easy. Instead of  `<<` shovel method that we use to item objects to arrays, hashes use an `[:key]=` method to add data. Let's say we're busy plugging away at our shipping manifest when Herman Melville comes running up to use to say we overlooked some items in our inspection. In fact, there are also 10 jars of molasses that we need to add to the shipping manifest. We would achieve that with the following code:
 
 ```ruby
-{
-  :students => ["Brandon", "Simon", "Vanessa", "Carl"], 
-  :teachers => ["Arel", "Avi", "Logan", "Amanda"], 
-  :locations => ["Brooklyn", "Manhattan"]
+shipping_manifest = {
+  "whale bone corset" => 5, 
+  "porcelain vase" => 2, 
+  "oil painting" => 3
+}
+
+shipping_manifest["jars of molasses"] = 10
+
+puts shipping_manifest
+#  └── shipping_manifest = {
+  "whale bone corset" => 5, 
+  "porcelain vase" => 2, 
+  "oil painting" => 3, 
+  "jars of molasses" => 10
 }
 ```
+
+To add data, you call the name of the hash, followed by a beginning bracket, followed by the name of the new key, followed by a closing bracket, followed by the assignment operator (`=`), followed by the name of the new value.
+
+%%%
+
+### Adding data
+
+Take a look at the hash below. Add a key/value pair to the hash. The key should be `"pearl necklace"` and the value should be `2`. 
+
+```ruby
+shipping_manifest = {
+  "whale bone corset" => 5, 
+  "porcelain vase" => 2, 
+  "oil painting" => 3
+}
+
+#add your key value pair to shipping_manifest here!
+
+#uncomment out the below line before submitting your answer!
+#shipping_manifest.inspect
+
+~~~solution
+
+shipping_manifest = {
+  "whale bone corset" => 5, 
+  "porcelain vase" => 2, 
+  "oil painting" => 3
+}
+
+shipping_manifest["pearl necklace"] = 2
+
+~~~validation 
+
+answer = "{
+  "whale bone corset" => 5, 
+  "porcelain vase" => 2, 
+  "oil painting" => 3
+  "pearl necklace" => 2
+}"
+
+
+assert.strictEqual(response, answer)
+```
+
+%%%
