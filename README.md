@@ -21,7 +21,7 @@ Up until this point, we've stored our data in list-form using arrays. Let's take
 
 ### Example: Customs Inspector
 
-![Herman Melville](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Herman_Melville.jpg/160px-Herman_Melville.jpg)
+![Herman Melville](http://flatiron-labs.s3.amazonaws.com/160px-Herman_Melville.jpg)
 
 The year is 1866 and we work beside [Herman Melville](https://en.wikipedia.org/wiki/Herman_Melville) (author of Moby Dick) as a customs inspector in New York. (I know, when did our lives become so old-timey and exciting? FYI he really did work there in 1866.) We're in charge of inspecting an incoming shipment and we need to track the items we're inspecting by listing each type of item (for example whale bone corset, porcelain, oil painting, other old fashioned item, etc) and the number of that item in the shipment. 
 
