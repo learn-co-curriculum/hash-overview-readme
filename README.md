@@ -19,6 +19,76 @@ In the upcoming lessons, we'll go over how to iterate over and manipulate hashes
 
 Up until this point, we've stored our data in list-form using arrays. Let's take a look at an example where an array would not be sufficient to meet our storage needs.
 
+## Hash Structure
+
+Hashes are structured with keys and values. Each key/value pair makes up one unit in the hash. The entire collection of key/value pairs, which are comma separated, is enclosed in curly braces, `{ }`. 
+
+```ruby
+hash = {"key" => "value", "another_key" => "another value"}
+```
+
+You can think of a hash as a dictionary. The key is the reference point that is set equal to an associated value. In fact, a dictionary makes a pretty good hash example. Let's take a look: 
+
+```ruby
+dictionary = {
+
+  "apple" => "a delicious fruit", 
+  "this readme" => "wonderful and informative piece of reading", 
+  "Moby Dick" => "a novel by my good friend, Herman Melville"
+  
+}
+```
+Keys in hashes can be strings, symbols or integers. They are set equal to their associated values via the hash-rocket, `=>`.  
+
+### Example: Named Data
+
+You can think of the data stored in a hash as being *associative*. In other words, keys point to data that is *related* to that key. Let's take a look at the following example: 
+
+```ruby
+the_rock = {"name" => "Dwayne, The Rock, Johnson", "weight" => "a lot"}
+```
+
+If we tried to represent this same information as an array, it would look something like this: 
+
+```ruby
+the_rock = ["name", "Dwayne, The Rock, Johnson", "weight", "a lot"]
+```
+
+Then, in order to access The Rock's name, we would have to use the following line of code: 
+
+```ruby
+the_rock[1]
+```
+
+That requires us to rememeber, every time we want to access The Rock's name, that it is stored at the first index of `the_rock` array. That is too hard to keep track of. 
+
+Unlike arrays which store data in numbered indexes, hashes store data in unique keys––like an address. **Each key in a hash must be unique**. The value associated with that key is then accessed via the key name, instead of an index number. Let's take a look: 
+
+```ruby
+the_rock = {"name" => "Dwayne, The Rock, Johnson", "weight" => "a lot"}
+
+the_rock["name"]
+#  => "Dwayne, The Rock, Johnson"
+```
+
+### What is a Hash Key?
+
+A key in a hash can be a string, a symbol or an integer, as long as you only use each key once. If, for example, we broke this cardinal rule with the following hash: 
+
+
+```ruby
+the_rock = {"name" => "Dwayne Johnson", "name" => "The Rock", "weight" => "a lot"}
+```
+
+And then tried to access The Rock's name: 
+
+```ruby
+the_rock["name"]
+```
+
+It will return the value of the *second* `"name"` key. There is no way to specifiy *which* name key we want, since hash look-ups operate based on keys. Therefore, **we must use unique keys to catalogue values**. 
+
+
 ### Example: Customs Inspector
 
 ![Herman Melville](http://flatiron-labs.s3.amazonaws.com/160px-Herman_Melville.jpg)
@@ -40,27 +110,7 @@ old_fashioned_things = {
   "porcelain vase" => 2, 
   "oil painting" => 3
 }
-```
-
-## Structure
-Hashes are structured with keys and values. Each key/value pair makes up one unit in the hash. The entire collection of key/value pairs, which are comma separated, is enclosed in curly braces, `{ }`. 
-
-```ruby
-hash = {:key => "value", :another_key => "another value"}
-```
-
-You can think of a hash as a dictionary. The key is the reference point that is set equal to an associated value. In fact, a dictionary makes a pretty good hash example. Let's take a look: 
-
-```ruby
-dictionary = {
-
-  "apple" => "a delicious fruit", 
-  "this readme" => "wonderful and informative piece of reading", 
-  "Moby Dick" => "a novel by my good friend, Herman Melville"
-  
-}
-```
-Keys in hashes can be strings, symbols or integers. They are set equal to their associated values via the hash-rocket, `=>`.  
+``` 
 
 ## Creating Hashes
 
