@@ -145,7 +145,8 @@ Let's practice by making some hashes below:
 
 Use the literal constructor to set the variable, `my_hash`, equal to a hash with key/value pairs of your choice. Remember, key/values pairs are associative. It doesn't make sense to have a key/value pair of `"my_name" => 78`. It *does* make sense to have a key/value pair of `"my_name" => "Herman Melville"` (if you happen to be that author, of course). 
 
-```ruby
+~~~ruby
+
 my_hash = { <delete this and fill out your own key/value pairs!> }
 
 ~~~solution
@@ -156,7 +157,10 @@ my_hash = {"my_name" => "Herman Melville", "my_novel" => "Moby Dick}
 
 assert_kind_of( Hash, response ); 
 
-```
+~~~
+
+%%%
+
 ## Retrieval
 
 Retrieving data is similar to retrieving data from an array but instead of giving the index number in brackets, you give the name of the key. If an array is a list in which we access index items by their number, a hash is a dictionary in which we access values by their key. 
@@ -174,7 +178,8 @@ pets[:cat]
 
 Below, create a hash called `shipping_manifest` and fill it with key/value pairs the describe the following information: We have 5 whale bone corsets, 2 porcelain vases and 3 oil paintings. Then access the value of the first key/value pair by using the syntax described above. 
 
-```ruby
+~~~ruby
+
 shipping_manifest = #code your hash here!
 
 first_value = #access the value of the first key/value pair here!
@@ -192,7 +197,10 @@ first_value = shipping_manifest["whale bone corset"]
 ~~~validation 
 
 assert.strictEqual(response, 5)
-```
+
+~~~
+
+%%%
 
 ## Adding Objects to Hashes
 Adding items to hashes is easy. Instead of  `<<` shovel method that we use to item objects to arrays, hashes use an `[:key]=` method to add data. Let's say we're busy plugging away at our shipping manifest when Herman Melville comes running up to use to say we overlooked some items in our inspection. In fact, there are also 10 jars of molasses that we need to add to the shipping manifest. We would achieve that with the following code:
@@ -223,7 +231,8 @@ To add data, you call the name of the hash, followed by a beginning bracket, fol
 
 Take a look at the hash below. Add a key/value pair to the hash. The key should be `"pearl necklace"` and the value should be `2`. 
 
-```ruby
+~~~ruby
+
 shipping_manifest = {
   "whale bone corset" => 5, 
   "porcelain vase" => 2, 
@@ -256,6 +265,7 @@ answer = "{
 
 
 assert.strictEqual(response, answer)
-```
+
+~~~
 
 %%%
