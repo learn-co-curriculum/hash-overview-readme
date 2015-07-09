@@ -256,15 +256,7 @@ shipping_manifest["pearl necklace"] = 2
 
 ~~~validation 
 
-answer = "{
-  "whale bone corset" => 5, 
-  "porcelain vase" => 2, 
-  "oil painting" => 3
-  "pearl necklace" => 2
-}"
-
-
-assert.strictEqual(response, answer)
+assert.strictEqual(response, "{"whale bone corset" => 5, "porcelain vase" => 2, "oil painting" => 3"pearl necklace" => 2}")
 
 ~~~
 
