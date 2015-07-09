@@ -46,7 +46,7 @@ puts positions[:office_manager]
 ```
 
 ## Manipulation
-* Instead of  `<<` shovel method, hashes use an `[:key]=` method to add data. Say we want to add the key of :content and have it point to value of "Stephanie". We would simply write the second line of code below:
+* Instead of  `<<` shovel method, hashes use an `[:key]=` method to add data. Say we want to add the key of `:content` and have it point to value of `"Stephanie"`. We would simply write the second line of code below:
 
 ```ruby
 positions = {:office_manager => "Carley", :coo => "Kristi", :placements => "Jackie"}
