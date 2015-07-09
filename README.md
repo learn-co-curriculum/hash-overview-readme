@@ -60,7 +60,7 @@ Then, in order to access The Rock's name, we would have to use the following lin
 the_rock[1]
 ```
 
-That requires us to rememeber, every time we want to access The Rock's name, that it is stored at the first index of `the_rock` array. That is too hard to keep track of. 
+That requires us to remember, every time we want to access The Rock's name, that it is stored at the first index of `the_rock` array. That is too hard to keep track of. 
 
 Unlike arrays which store data in numbered indexes, hashes store data in unique keys––like an address. **Each key in a hash must be unique**. The value associated with that key is then accessed via the key name, instead of an index number. Let's take a look: 
 
@@ -86,7 +86,7 @@ And then tried to access The Rock's name:
 the_rock["name"]
 ```
 
-It will return the value of the *second* `"name"` key. There is no way to specifiy *which* name key we want, since hash look-ups operate based on keys. Therefore, **we must use unique keys to catalogue values**. 
+It will return the value of the *second* `"name"` key. There is no way to specify *which* name key we want, since hash look-ups operate based on keys. Therefore, **we must use unique keys to catalogue values**. 
 
 
 ### Example: Customs Inspector
@@ -95,7 +95,7 @@ It will return the value of the *second* `"name"` key. There is no way to specif
 
 The year is 1866 and we work beside [Herman Melville](https://en.wikipedia.org/wiki/Herman_Melville) (author of Moby Dick) as a customs inspector in New York. (I know, when did our lives become so old-timey and exciting? FYI he really did work there in 1866.) We're in charge of inspecting an incoming shipment and we need to track the items we're inspecting by listing each type of item (for example whale bone corset, porcelain, oil painting, other old fashioned item, etc) and the number of that item in the shipment. 
 
-Let's say our shipment containts 5 whale bone corsets, 2 porcelain vases and 3 oil paintings. If we tried to store them in an array in list form, it would look like this: 
+Let's say our shipment contains 5 whale bone corsets, 2 porcelain vases and 3 oil paintings. If we tried to store them in an array in list form, it would look like this: 
 
 ```ruby
 old_fashioned_things = ["whale bone corset", "porcelain vase", "oil painting"
