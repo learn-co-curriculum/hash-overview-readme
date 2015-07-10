@@ -5,8 +5,8 @@
 We're going to introduce a new data structure, one that is more complicated than arrays. Hashes will occupy us for the next several lessons and there's a lot to cover. This lesson, which includes code challenges, covers the following:
 
 1. Introduction: what are hashes and what do we need them for?
-2. Creating
-3. Retrieval
+2. Creating Hashes
+3. Retrieving Data from Hashes
 4. Adding Data to Hashes
 
 In the upcoming lessons, we'll go over how to iterate over and manipulate hashes and how to build more complex, or nested, hashes. 
