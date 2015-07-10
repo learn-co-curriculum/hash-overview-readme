@@ -138,7 +138,6 @@ pets = {:cat => "Maru", :dog => "Pluto"}
 ```
 In the upcoming lab, you'll get a chance to practice making your own hashes.
 
-
 ## Retrieving Data from Hashes
 
 Retrieving data is similar to retrieving data from an array but instead of giving the index number in brackets, you give the name of the key. If an array is a list in which we access index items by their number, a hash is a dictionary in which we access values by their key. 
@@ -152,6 +151,7 @@ pets[:cat]
 This is referred to as the `[]` method. 
 
 ## Adding Objects to Hashes
+
 Adding items to hashes is easy. Instead of  `<<` shovel method that we use to item objects to arrays, hashes use an `[:key]=` method to add data. Let's say we're busy plugging away at our shipping manifest when Herman Melville comes running up to use to say we overlooked some items in our inspection. In fact, there are also 10 jars of molasses that we need to add to the shipping manifest. We would achieve that with the following code:
 
 ```ruby
@@ -172,5 +172,5 @@ puts shipping_manifest
 }
 ```
 
-To add data, you call the name of the hash, followed by a beginning bracket, followed by the name of the new key, followed by a closing bracket, followed by the assignment operator (`=`), followed by the name of the new value.
+To add data, you call the name of the hash, followed by a beginning bracket, followed by the name of the new key, followed by a closing bracket, followed by the assignment operator (`=`), followed by the name of the new value. This is referred to as the `[]=` method.
 
