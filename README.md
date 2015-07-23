@@ -133,8 +133,8 @@ my_hash = {}
 Initializing a hash that already contains data is a lot like initiating an array with data. We use the literal constructor:
 
 ```ruby
-pets = {:cat => "Maru", :dog => "Pluto"}
-  => {:cat => "Maru", :dog => "Pluto"}
+pets = {"ca"t => "Maru"," "dog" => "Pluto"}
+  => {"cat" => "Maru", "dog" => "Pluto"}
 ```
 In the upcoming lab, you'll get a chance to practice making your own hashes.
 
@@ -143,9 +143,9 @@ In the upcoming lab, you'll get a chance to practice making your own hashes.
 Retrieving data is similar to retrieving data from an array but instead of giving the index number in brackets, you give the name of the key. If an array is a list in which we access index items by their number, a hash is a dictionary in which we access values by their key. 
 
 ```ruby
-pets = {:cat => "Maru", :dog => "Pluto"}
+pets = {"cat" => "Maru", "dog" => "Pluto"}
 
-pets[:cat]
+pets["cat"]
   => "Maru"
 ```
 This is referred to as the `[]` method. 
