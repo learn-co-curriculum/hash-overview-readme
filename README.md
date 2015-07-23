@@ -172,7 +172,7 @@ Retrieving data from a hash is similar to retrieving data from an array, but ins
 ```ruby
 pets = {"cat" => "Maru", "dog" => "Pluto"}
 
-pets[cat]
+pets["cat"]
   => "Maru"
 ```
 Using `[]` is referred to as the "bracket method". 
