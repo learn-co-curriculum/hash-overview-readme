@@ -122,7 +122,7 @@ old_fashioned_things = [
   "oil painting"
 ]
 ```
-As it stands, there is no way for us to include the count of each item in a way that associates the item to its count, so we have store a separate occurrence of that item in order to track the shipment. Certainly for a small list this is manageable, but what happens when the shipment of Herman's first printing of *Moby Dick* arrives? We'd have store 10,000 occurrences of the book instead of recording the count as value. That's no good! 
+As it stands, there is no way for us to include the count of each item in a way that associates the item to its count, so we have store a separate occurrence of that item in order to track the shipment. Certainly for a small list this is manageable, but what happens when the shipment of Herman's first printing of *Moby Dick* arrives? We'd have to store 10,000 occurrences of the book instead of recording the count as value. That's no good! 
 
 So, how else can we help Herman keep track of how many of each item are included in the shipment? Here's where a hash can come in handy. With a hash, we can store a list of associated key/value pairs. In other words, we can store the pairs of item/count:
 
