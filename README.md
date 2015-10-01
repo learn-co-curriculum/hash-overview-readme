@@ -8,7 +8,7 @@
 4. Add data to a hash.
 
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/0JSsFQGYaeA" frameborder="0" allowfullscreen></iframe>
+<iframe width=100% height=100% src="https://www.youtube.com/embed/0JSsFQGYaeA" frameborder="0" allowfullscreen></iframe>
 
 ## Introduction
 
