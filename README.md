@@ -7,6 +7,10 @@
 3. Retrieving data from a hash.
 4. Add data to a hash.
 
+<iframe width="420" height="315"
+src="https://www.youtube.com/watch?v=0JSsFQGYaeA">
+</iframe>
+
 ## Introduction
 
 We're going to introduce a new data structure, one that is more complicated than arrays. Hashes will occupy us for the next several lessons and there's a lot to cover. This lesson, which includes code challenges, covers the following:
