@@ -188,10 +188,10 @@ Using `[]` is referred to as the "bracket method".
 
 ## Adding Objects to Hashes
 
-Adding items to hashes is easy. Instead of `<<` (the shovel method) that we use to add items to arrays, hashes use an `[:key]=` method to add data. The full syntax for this takes the form of:
+Adding items to hashes is easy. Instead of `<<` (the shovel method) that we use to add items to arrays, hashes use an `[key]=` method to add data. The full syntax for this takes the form of:
 
 ```ruby
-hash[:key]= value
+hash[key]= value
 ```
 
 While we were busy plugging away at our shipping manifest, Herman discovered an attempt to smuggle ten (10) jars of molasses past the inspection. Since molasses isn't illegal Herman decided not to confiscate it, but we do need to add it to the manifest so the merchant gets taxed on it. Accomplishing this with our hash would look like this:
