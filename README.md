@@ -26,9 +26,33 @@ In the upcoming lessons, we'll go over how to iterate over and manipulate hashes
 > 
 > — [Chris Pine, *Learn to Program*, page 108](http://books.flatironschool.com/books/43?page=108)
 
-Up until this point, we've stored our data in list-form using arrays. After we explain the basics of a hash, we'll take a look at an example where an array would not be sufficient to meet our storage needs.
+### Why Hashes?
 
-## Hash Structure
+Up until this point, we've stored our data in list-form using arrays. An array is like a numbered list. It stores a group of items which are accessible via there location, or index number, in the list. 
+
+Imagine a grocery list: you need to go to the store and buy milk, eggs and bread. You could store your list like this:
+
+```ruby
+groceries = ["milk", "eggs", "bread"]
+```
+
+What happens when your list expands to include your other errands? Let's say you need to go the grocery store and the pharmacy and the stationary store (you've been using up a lot of paper as you take copious notes on learning to code).
+
+We could make one giant array that contains all of the items you need to buy:
+
+```ruby
+stuff_i_need = ["milk", "eggs", "bread", "toothpaste", "band-aids", "paper", "pens", "highligther"]
+```
+
+This isn't very organized though. There is no way to distinguish the different categories of items. 
+
+This is where hashes come it. Hashes store data in an associated manner. With a hash, we can group or data into the necessary categories of "grocery", "pharmacy" and "stationary store". 
+
+Hashes allow us to store named, or associated, data. Think of a dictionary or an address book. This allows us to store more complex collections of information than the arrays we've seen so far. 
+
+
+
+## Hash Structure and Usage
 
 Hashes are structured with keys and values. Each key/value pair makes up one unit in the hash. The entire collection of key/value pairs, which are comma separated, is enclosed in curly braces `{ }`. 
 
@@ -50,7 +74,7 @@ dictionary = {
 
 **//Flat-fact:** *In fact, "dictionary" is how the hash structure is known in some other programming languages such as Python and Objective-C.*
 
-Keys in hashes can be strings, symbols, or integers. They are set equal to their associated values by using the `=>` symbol, known for this use as the "hash-rocket" (*because it looks like a little rocket shooting off towards the right*).  
+Keys in hashes can be any type of data: strings, integers or symbols (more on symbols later, don't worry about them for now). They are set equal to their associated values by using the `=>` symbol, known for this use as the "hash-rocket" (*because it looks like a little rocket shooting off towards the right*).  
 
 ### Example: Named Data
 
@@ -74,42 +98,22 @@ the_rock[1]
 
 That requires us to remember, every time we want to access The Rock's name, that it is stored at the first index of `the_rock` array. That is too hard to keep track of. 
 
-Unlike arrays which store data in numbered indexes, hashes store data in unique keys—like fields for a contact in your address book. **Each key in a hash must be unique**. The value associated with that key is then accessed by accessing the hash using the key, rather than an index number. Let's take a look: 
+In our `the_rock` hash, we have two key/value pairs. We have a key of `"name"`, which points to an associated value of The Rock's name. We have have a key of `"weight"` which points to an associated value of The Rock's (real) weight. In this way, we are able to store data about The Rock in an organized and understandable manner.
 
-```ruby
-the_rock = {"name" => "Dwayne, The Rock, Johnson", "weight" => "a lot"}
+#### Hash Keys and Uniqueness
 
-the_rock["name"]
-#  => "Dwayne, The Rock, Johnson"
-```
+A key in a hash can be a string, a symbol, or an integer as long as you only use each key once. This is because, unlike arrays which store data in numbered indexes and access that data via the index numbers, hashes store data in keys and access that data by naming the key whose value we want to retrieve.
 
-### What is a Hash Key?
+If you try to add a second key that duplicates an existing key, you will overwrite the value of the existing key, *instead of adding a new key/value pair*. Not only will duplicate hash keys simply not work as a way to store information, it just doesn't make sense. 
 
-A key in a hash can be a string, a symbol, or an integer as long as you only use each key once. If, for example, we broke this cardinal rule with the following hash: 
-
-
-```ruby
-the_rock = {"name" => "Dwayne Johnson", "name" => "The Rock", "weight" => "a lot"}
-```
-
-And then tried to access The Rock's name: 
-
-```ruby
-the_rock["name"]
-# => "The Rock"
-```
-
-Since each key must be unique, reusing a key will overwrite the previously stored value. Therefore, **we must use unique keys to catalogue distinct values**:
+Hashes are for storing named, or associative, data. Each key/value pair describes a unique attribute or unit of information. A person doesn't have two names, in reality. They might, though, have a name and a nickname. The data structure we are creating should mirror the real-world entity we are trying to describe. The uniqueness of our hash keys reflects that. 
 
 ```ruby
 the_rock = {"name" => "Dwayne Johnson", "stage_name" => "The Rock", "weight" => "a lot"}
-
-the_rock["name"]
-# => "Dwayne Johnson"
 ```
 
 
-### Example: Customs Inspector
+### Example: Counting Data
 
 ![Herman Melville](http://flatiron-labs.s3.amazonaws.com/160px-Herman_Melville.jpg)
 
@@ -150,14 +154,7 @@ We'll be done recording these shipments in no time!
 
 ## Creating Hashes
 
-We can make a new hash via the class constructor or the literal constructor, just like arrays. 
-
-### The Class Constructor
-
-```ruby
-my_hash = Hash.new
-  => {}  
-```
+We can make a new hash via the literal constructor, just like arrays. 
 
 ### The Literal Constructor
 
@@ -174,6 +171,8 @@ pets = {"cat" => "Maru", "dog" => "Pluto"}
 ```
 In the upcoming lab, you'll get a chance to practice making your own hashes.
 
+**Note:** You may see something called the "class constructor", `Hash.new`, if you read outside sources on Hashes. Don't worry about this for now, we'll learn more about it later. 
+
 ## Retrieving Data from Hashes
 
 Retrieving data from a hash is similar to retrieving data from an array, but instead of giving an array the index number in brackets `[i]` we give a hash the name of the key `[key]`. If an array is a list in which we access index items by their number, a hash is a dictionary in which we access values by their key. 
@@ -184,15 +183,19 @@ pets = {"cat" => "Maru", "dog" => "Pluto"}
 pets["cat"]
   => "Maru"
 ```
-Using `[]` is referred to as the "bracket method". 
+Using `[]` is referred to as the **"bracket method".** It is actually a method just like any other––just like the methods you've been defining and like the methods available on objects such as Strings. 
 
 ## Adding Objects to Hashes
 
-Adding items to hashes is easy. Instead of `<<` (the shovel method) that we use to add items to arrays, hashes use an `[key]=` method to add data. The full syntax for this takes the form of:
+Adding items to hashes is easy. Instead of `<<` (the shovel method) that we use to add items to arrays, hashes use the **"bracket-equals"** method to add data. The full syntax for this takes the form of:
 
 ```ruby
-hash[key]= value
+hash_name[new_key_name]= new_value
 ```
+
+Let's think about the distinction between the `<<` method for arrays and the `[]=`, or bracket-equals, method of adding data to hashes. 
+
+Hashes are *not numbered lists*. The data stored in them is not indexed by number, but instead associated to a unique key. Consequently a hash has no concept of the "end of the list", like an array. So the `<<` method, which tells the array to find the end of the list and add the new item to the next index, can't work on a hash. 
 
 While we were busy plugging away at our shipping manifest, Herman discovered an attempt to smuggle ten (10) jars of molasses past the inspection. Since molasses isn't illegal Herman decided not to confiscate it, but we do need to add it to the manifest so the merchant gets taxed on it. Accomplishing this with our hash would look like this:
 
