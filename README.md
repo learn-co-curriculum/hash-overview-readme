@@ -1,32 +1,24 @@
 # Hashes
 
+## Overview
+We'll introduce hashes-- a new data structure-- and will cover how to create, retrieve data from, and add data to them. 
+
 ## Objectives
 
-1. Get introduced to hashes and how they are useful.
-2. Create a hash.
-3. Retrieving data from a hash.
-4. Add data to a hash.
+1. Describe the structure of hashes and how they allow for data storage.
+2. Create hashes using the literal constructor.
+3. Retrieve data from hashes using the "bracket" method.
+4. Add data to hashes using the "bracket-equals" method.
 
 
 <iframe width="640" height="480" src="https://www.youtube.com/embed/0JSsFQGYaeA" frameborder="0" allowfullscreen></iframe>
 
-## Introduction
-
-We're going to introduce a new data structure, one that is more complicated than arrays. Hashes will occupy us for the next several lessons and there's a lot to cover. This lesson, which includes code challenges, covers the following:
-
-* What is a hash?
-* What are hashes used for?
-* Creating hashes
-* Adding data to hashes
-* Retrieving data from hashes
-
-In the upcoming lessons, we'll go over how to iterate over and manipulate hashes and how to build more complex, or nested, hashes. 
+### Why Hashes
 
 > Hashes are a lot like arrays: they have a bunch of slots that can point to various objects. However, in an array, the slots are lined up in a row, and each one is numbered (starting from zero). In a hash, the slots aren’t in a row (they are just sort of jumbled together) and you can use any object to refer to a slot, not just a number. 
 > 
 > — [Chris Pine, *Learn to Program*, page 108](http://books.flatironschool.com/books/43?page=108)
 
-### Why Hashes?
 
 Up until this point, we've stored our data in list-form using arrays. An array is like a numbered list. It stores a group of items which are accessible via there location, or index number, in the list. 
 
