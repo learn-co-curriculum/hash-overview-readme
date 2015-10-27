@@ -1,7 +1,7 @@
 # Hashes
 
 ## Overview
-We'll introduce hashes-- a new data structure. We'll cover how to create them, and retrieve data from and add data to them.
+We'll introduce a new data structure called hashes. We'll cover how to create them, retrieve data from, and add data to them.
 
 ## Objectives
 
