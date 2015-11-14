@@ -20,7 +20,7 @@ We'll introduce a new data structure called hashes. We'll cover how to create th
 > — [Chris Pine, *Learn to Program*, page 108](http://books.flatironschool.com/books/43?page=108)
 
 
-Up until this point, we've stored our data in list-form using arrays. An array is like a numbered list. It stores a group of items which are accessible via there location, or index number, in the list. 
+Up until this point, we've stored our data in list-form using arrays. An array is like a numbered list. It stores a group of items which are accessible via their location, or index number, in the list. 
 
 Imagine a grocery list: you need to go to the store and buy milk, eggs and bread. You could store your list like this:
 
