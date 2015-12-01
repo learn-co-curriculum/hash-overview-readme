@@ -38,7 +38,7 @@ stuff_i_need = ["milk", "eggs", "bread", "toothpaste", "band-aids", "paper", "pe
 
 This isn't very organized though. There is no way to distinguish the different categories of items. 
 
-This is where hashes come it. Hashes store data in an associated manner. With a hash, we can group or data into the necessary categories of "grocery", "pharmacy" and "stationary store". 
+This is where hashes come in. Hashes store data in an associated manner. With a hash, we can group or data into the necessary categories of "grocery", "pharmacy" and "stationary store". 
 
 Hashes allow us to store named, or associated, data. Think of a dictionary or an address book. This allows us to store more complex collections of information than the arrays we've seen so far. 
 
