@@ -209,3 +209,5 @@ puts shipping_manifest
 }
 ```
 Well done!
+
+<a href='https://learn.co/lessons/hash-overview-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
