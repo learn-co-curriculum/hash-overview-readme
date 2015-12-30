@@ -33,7 +33,7 @@ What happens when your list expands to include your other errands? Let's say you
 We could make one giant array that contains all of the items you need to buy:
 
 ```ruby
-stuff_i_need = ["milk", "eggs", "bread", "toothpaste", "band-aids", "paper", "pens", "highligther"]
+stuff_i_need = ["milk", "eggs", "bread", "toothpaste", "band-aids", "paper", "pens", "highlighter"]
 ```
 
 This isn't very organized though. There is no way to distinguish the different categories of items. 
