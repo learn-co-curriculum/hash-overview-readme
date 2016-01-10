@@ -90,7 +90,7 @@ the_rock[1]
 
 That requires us to remember, every time we want to access The Rock's name, that it is stored at the first index of `the_rock` array. That is too hard to keep track of. 
 
-In our `the_rock` hash, we have two key/value pairs. We have a key of `"name"`, which points to an associated value of The Rock's name. We have have a key of `"weight"` which points to an associated value of The Rock's (real) weight. In this way, we are able to store data about The Rock in an organized and understandable manner.
+In our `the_rock` hash, we have two key/value pairs. We have a key of `"name"`, which points to an associated value of The Rock's name. We have a key of `"weight"` which points to an associated value of The Rock's (real) weight. In this way, we are able to store data about The Rock in an organized and understandable manner.
 
 #### Hash Keys and Uniqueness
 
