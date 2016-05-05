@@ -17,7 +17,7 @@ We'll introduce a new data structure called hashes. We'll cover how to create th
 
 > Hashes are a lot like arrays: they have a bunch of slots that can point to various objects. However, in an array, the slots are lined up in a row, and each one is numbered (starting from zero). In a hash, the slots aren’t in a row (they are just sort of jumbled together) and you can use any object to refer to a slot, not just a number. 
 > 
-> — [Chris Pine, *Learn to Program*, page 108](http://books.flatironschool.com/books/43?page=108)
+> — [Chris Pine, *Learn to Program*, 2nd edition, pages 97-98](http://books.flatironschool.com/books/43?page=108)
 
 
 Up until this point, we've stored our data in list-form using arrays. An array is like a numbered list. It stores a group of items which are accessible via their location, or index number, in the list. 
@@ -211,3 +211,5 @@ puts shipping_manifest
 Well done!
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/hash-overview-readme' title='Hashes'>Hashes</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/hash-overview-readme'>Introduction to Hashes</a> on Learn.co and start learning to code for free.</p>
