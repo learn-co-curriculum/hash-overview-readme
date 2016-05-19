@@ -15,12 +15,12 @@ We'll introduce a new data structure called hashes. We'll cover how to create th
 
 ### Why Hashes
 
-> Hashes are a lot like arrays: they have a bunch of slots that can point to various objects. However, in an array, the slots are lined up in a row, and each one is numbered (starting from zero). In a hash, the slots aren’t in a row (they are just sort of jumbled together) and you can use any object to refer to a slot, not just a number. 
-> 
-> — [Chris Pine, *Learn to Program*, 2nd edition, pages 97-98](http://books.flatironschool.com/books/43?page=108)
+> Hashes are a lot like arrays: they have a bunch of slots that can point to various objects. However, in an array, the slots are lined up in a row, and each one is numbered (starting from zero). In a hash, the slots aren’t in a row (they are just sort of jumbled together) and you can use any object to refer to a slot, not just a number.
+>
+> — [Chris Pine, *Learn to Program*, 2nd edition, pages 97-98](https://pine.fm/LearnToProgram/)
 
 
-Up until this point, we've stored our data in list-form using arrays. An array is like a numbered list. It stores a group of items which are accessible via their location, or index number, in the list. 
+Up until this point, we've stored our data in list-form using arrays. An array is like a numbered list. It stores a group of items which are accessible via their location, or index number, in the list.
 
 Imagine a grocery list: you need to go to the store and buy milk, eggs and bread. You could store your list like this:
 
@@ -28,7 +28,7 @@ Imagine a grocery list: you need to go to the store and buy milk, eggs and bread
 groceries = ["milk", "eggs", "bread"]
 ```
 
-What happens when your list expands to include your other errands? Let's say you need to go the grocery store and the pharmacy and the stationary store (you've been using up a lot of paper as you take copious notes on learning to code).
+What happens when your list expands to include your other errands? Let's say you need to go the grocery store, the pharmacy, and the stationary store (you've been using up a lot of paper as you take copious notes on learning to code).
 
 We could make one giant array that contains all of the items you need to buy:
 
@@ -36,17 +36,15 @@ We could make one giant array that contains all of the items you need to buy:
 stuff_i_need = ["milk", "eggs", "bread", "toothpaste", "band-aids", "paper", "pens", "highlighter"]
 ```
 
-This isn't very organized though. There is no way to distinguish the different categories of items. 
+This isn't very organized though. There is no way to distinguish the different categories of items.
 
-This is where hashes come in. Hashes store data in an associated manner. With a hash, we can group our data into the necessary categories of "grocery", "pharmacy" and "stationary store". 
+This is where hashes come in. Hashes store data in an associated manner. With a hash, we can group our data into the necessary categories of "grocery", "pharmacy", and "stationary".
 
-Hashes allow us to store named, or associated, data. Think of a dictionary or an address book. This allows us to store more complex collections of information than the arrays we've seen so far. 
-
-
+Hashes allow us to store named, or associated, data. Think of a dictionary or an address book. This allows us to store more complex collections of information than the arrays we've seen so far.
 
 ## Hash Structure and Usage
 
-Hashes are structured with keys and values. Each key/value pair makes up one unit in the hash. The entire collection of key/value pairs, which are comma separated, is enclosed in curly braces `{ }`. 
+Hashes are structured with keys and values. Each key/value pair makes up one unit in the hash. The entire collection of key/value pairs, which are comma separated, is enclosed in curly braces `{ }`.
 
 ```ruby
 hash = {"key" => "value", "another_key" => "another value"}
@@ -57,10 +55,10 @@ You can think of a hash as a dictionary. The key is the reference point that is 
 ```ruby
 dictionary = {
 
-  "apple" => "a delicious fruit", 
-  "this readme" => "wonderful and informative piece of reading", 
+  "apple" => "a delicious fruit",
+  "this readme" => "wonderful and informative piece of reading",
   "Moby Dick" => "a novel by my good friend, Herman Melville"
-  
+
 }
 ```
 
@@ -70,25 +68,25 @@ Keys in hashes can be any type of data: strings, integers or symbols (more on sy
 
 ### Example: Named Data
 
-You can think of the data stored in a hash as being *associative*. In other words, keys point to data that is *related* to that key. Let's take a look at the following example: 
+You can think of the data stored in a hash as being *associative*. In other words, keys point to data that is *related* to that key. Let's take a look at the following example:
 
 ```ruby
 the_rock = {"name" => "Dwayne, The Rock, Johnson", "weight" => "a lot"}
 ```
 
-If we tried to represent this same information as an array, it would look something like this: 
+If we tried to represent this same information as an array, it would look something like this:
 
 ```ruby
 the_rock = ["name", "Dwayne, The Rock, Johnson", "weight", "a lot"]
 ```
 
-Then, in order to access The Rock's name, we would have to use the following line of code: 
+Then, in order to access The Rock's name, we would have to use the following line of code:
 
 ```ruby
 the_rock[1]
 ```
 
-That requires us to remember, every time we want to access The Rock's name, that it is stored at the first index of `the_rock` array. That is too hard to keep track of. 
+That requires us to remember, every time we want to access The Rock's name, that it is stored at the first index of `the_rock` array. That is too hard to keep track of.
 
 In our `the_rock` hash, we have two key/value pairs. We have a key of `"name"`, which points to an associated value of The Rock's name. We have a key of `"weight"` which points to an associated value of The Rock's (real) weight. In this way, we are able to store data about The Rock in an organized and understandable manner.
 
@@ -96,9 +94,9 @@ In our `the_rock` hash, we have two key/value pairs. We have a key of `"name"`, 
 
 A key in a hash can be a string, a symbol, or an integer as long as you only use each key once. This is because, unlike arrays which store data in numbered indexes and access that data via the index numbers, hashes store data in keys and access that data by naming the key whose value we want to retrieve.
 
-If you try to add a second key that duplicates an existing key, you will overwrite the value of the existing key, *instead of adding a new key/value pair*. Not only will duplicate hash keys simply not work as a way to store information, it just doesn't make sense. 
+If you try to add a second key that duplicates an existing key, you will overwrite the value of the existing key, *instead of adding a new key/value pair*. Not only will duplicate hash keys simply not work as a way to store information, it just doesn't make sense.
 
-Hashes are for storing named, or associative, data. Each key/value pair describes a unique attribute or unit of information. A person doesn't have two names, in reality. They might, though, have a name and a nickname. The data structure we are creating should mirror the real-world entity we are trying to describe. The uniqueness of our hash keys reflects that. 
+Hashes are for storing named, or associative, data. Each key/value pair describes a unique attribute or unit of information. A person doesn't have two names, in reality. They might, though, have a name and a nickname. The data structure we are creating should mirror the real-world entity we are trying to describe. The uniqueness of our hash keys reflects that.
 
 ```ruby
 the_rock = {"name" => "Dwayne Johnson", "stage_name" => "The Rock", "weight" => "a lot"}
@@ -109,44 +107,44 @@ the_rock = {"name" => "Dwayne Johnson", "stage_name" => "The Rock", "weight" => 
 
 ![Herman Melville](http://flatiron-labs.s3.amazonaws.com/160px-Herman_Melville.jpg)
 
-The year is 1866 and we work beside [Herman Melville](https://en.wikipedia.org/wiki/Herman_Melville) (author of Moby Dick) as a customs inspector in New York. (I know, when did our lives become so old-timey and exciting?) We're in charge of inspecting an incoming shipment and we need to track the items we're inspecting by listing each type of item (such as: whale bone corsets, porcelain vases, and oil paintings) along with the number of each kind of item in the shipment. 
+The year is 1866 and we work beside [Herman Melville](https://en.wikipedia.org/wiki/Herman_Melville) (author of Moby Dick) as a customs inspector in New York. (I know, when did our lives become so old-timey and exciting?) We're in charge of inspecting an incoming shipment and we need to track the items we're inspecting by listing each type of item (such as: whale bone corsets, porcelain vases, and oil paintings) along with the number of each kind of item in the shipment.
 
-Let's say our shipment contains five (5) whale bone corsets, two (2) porcelain vases, and three (3) oil paintings. If we tried to store them in an array in list form, it would look like this: 
+Let's say our shipment contains five (5) whale bone corsets, two (2) porcelain vases, and three (3) oil paintings. If we tried to store them in an array in list form, it would look like this:
 
 ```ruby
 old_fashioned_things = [
-  "whale bone corset", 
-  "whale bone corset", 
-  "whale bone corset", 
-  "whale bone corset", 
-  "whale bone corset", 
-  "porcelain vase", 
-  "porcelain vase", 
-  "oil painting", 
-  "oil painting", 
+  "whale bone corset",
+  "whale bone corset",
+  "whale bone corset",
+  "whale bone corset",
+  "whale bone corset",
+  "porcelain vase",
+  "porcelain vase",
+  "oil painting",
+  "oil painting",
   "oil painting"
 ]
 ```
-As it stands, there is no way for us to include the count of each item in a way that associates the item to its count, so we have to store a separate occurrence of that item in order to track the shipment. Certainly for a small list this is manageable, but what happens when the shipment of Herman's first printing of *Moby Dick* arrives? We'd have to store 10,000 occurrences of the book instead of recording the count as value. That's no good! 
+As it stands, there is no way for us to include the count of each item in a way that associates the item to its count, so we have to store a separate occurrence of that item in order to track the shipment. Certainly for a small list this is manageable, but what happens when the shipment of Herman's first printing of *Moby Dick* arrives? We'd have to store 10,000 occurrences of the book instead of recording the count as value. That's no good!
 
 So, how else can we help Herman keep track of how many of each item are included in the shipment? Here's where a hash can come in handy. With a hash, we can store a list of associated key/value pairs. In other words, we can store the pairs of item/count:
 
 ```ruby
 old_fashioned_things = {
-  "whale bone corset" => 5, 
-  "porcelain vase" => 2, 
+  "whale bone corset" => 5,
+  "porcelain vase" => 2,
   "oil painting" => 3
 }
 
 first_printing = {
   "Moby Dick" => 10000
 }
-``` 
+```
 We'll be done recording these shipments in no time!
 
 ## Creating Hashes
 
-We can make a new hash via the literal constructor, just like arrays. 
+We can make a new hash via the literal constructor, just like arrays.
 
 ### The Literal Constructor
 
@@ -163,11 +161,11 @@ pets = {"cat" => "Maru", "dog" => "Pluto"}
 ```
 In the upcoming lab, you'll get a chance to practice making your own hashes.
 
-**Note:** You may see something called the "class constructor", `Hash.new`, if you read outside sources on Hashes. Don't worry about this for now, we'll learn more about it later. 
+**Note:** You may see something called the "class constructor", `Hash.new`, if you read outside sources on Hashes. Don't worry about this for now, we'll learn more about it later.
 
 ## Retrieving Data from Hashes
 
-Retrieving data from a hash is similar to retrieving data from an array, but instead of giving an array the index number in brackets `[i]` we give a hash the name of the key `[key]`. If an array is a list in which we access index items by their number, a hash is a dictionary in which we access values by their key. 
+Retrieving data from a hash is similar to retrieving data from an array, but instead of giving an array the index number in brackets `[i]` we give a hash the name of the key `[key]`. If an array is a list in which we access index items by their number, a hash is a dictionary in which we access values by their key.
 
 ```ruby
 pets = {"cat" => "Maru", "dog" => "Pluto"}
@@ -175,7 +173,7 @@ pets = {"cat" => "Maru", "dog" => "Pluto"}
 pets["cat"]
   => "Maru"
 ```
-Using `[]` is referred to as the **"bracket method".** It is actually a method just like any other––just like the methods you've been defining and like the methods available on objects such as Strings. 
+Using `[]` is referred to as the **"bracket method".** It is actually a method just like any other––just like the methods you've been defining and like the methods available on objects such as Strings.
 
 ## Adding Objects to Hashes
 
@@ -185,31 +183,29 @@ Adding items to hashes is easy. Instead of `<<` (the shovel method) that we use 
 hash_name[new_key_name]= new_value
 ```
 
-Let's think about the distinction between the `<<` method for arrays and the `[]=`, or bracket-equals, method of adding data to hashes. 
+Let's think about the distinction between the `<<` method for arrays and the `[]=`, or bracket-equals, method of adding data to hashes.
 
-Hashes are *not numbered lists*. The data stored in them is not indexed by number, but instead associated to a unique key. Consequently a hash has no concept of the "end of the list", like an array. So the `<<` method, which tells the array to find the end of the list and add the new item to the next index, can't work on a hash. 
+Hashes are *not numbered lists*. The data stored in them is not indexed by number, but instead associated to a unique key. Consequently a hash has no concept of the "end of the list", like an array. So the `<<` method, which tells the array to find the end of the list and add the new item to the next index, can't work on a hash.
 
 While we were busy plugging away at our shipping manifest, Herman discovered an attempt to smuggle ten (10) jars of molasses past the inspection. Since molasses isn't illegal Herman decided not to confiscate it, but we do need to add it to the manifest so the merchant gets taxed on it. Accomplishing this with our hash would look like this:
 
 ```ruby
 shipping_manifest = {
-  "whale bone corset" => 5, 
-  "porcelain vase" => 2, 
+  "whale bone corset" => 5,
+  "porcelain vase" => 2,
   "oil painting" => 3
 }
 
 shipping_manifest["jar of molasses"] = 10
 
 puts shipping_manifest
-#  └── shipping_manifest = {
-  "whale bone corset" => 5, 
-  "porcelain vase" => 2, 
-  "oil painting" => 3, 
-  "jar of molasses" => 10
-}
+# {
+#   "whale bone corset" => 5,
+#   "porcelain vase" => 2,
+#   "oil painting" => 3,
+#   "jar of molasses" => 10
+# }
 ```
 Well done!
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/hash-overview-readme' title='Hashes'>Hashes</a> on Learn.co and start learning to code for free.</p>
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/hash-overview-readme'>Introduction to Hashes</a> on Learn.co and start learning to code for free.</p>
