@@ -161,7 +161,7 @@ pets = {"cat" => "Maru", "dog" => "Pluto"}
 ```
 In the upcoming lab, you'll get a chance to practice making your own hashes.
 
-**Note:** You may see something called the "class constructor", `Hash.new`, if you read outside sources on Hashes. Don't worry about this for now, we'll learn more about it later.
+**Note:** You may see something called the "class constructor", `Hash.new`, if you read outside sources on Hashes. Don't worry about this for now. We'll learn more about it later.
 
 ## Retrieving Data from Hashes
 
@@ -209,3 +209,5 @@ puts shipping_manifest
 Well done!
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/hash-overview-readme' title='Hashes'>Hashes</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/hash-overview-readme'>Introduction to Hashes</a> on Learn.co and start learning to code for free.</p>
