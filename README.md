@@ -92,7 +92,7 @@ In our `the_rock` hash, we have two key/value pairs. We have a key of `"name"`, 
 
 #### Hash Keys and Uniqueness
 
-A key in a hash can be a string, a symbol, or an integer as long as you only use each key once. This is because, unlike arrays which store data in numbered indexes and access that data via the index numbers, hashes store data in keys and access that data by naming the key whose value we want to retrieve.
+A key in a hash can be a string, a symbol, or an integer as long as you only use each key once. This is because, unlike arrays, which store data in numbered indexes and access that data via the index numbers, hashes store data in keys and access that data by naming the key whose value we want to retrieve.
 
 If you try to add a second key that duplicates an existing key, you will overwrite the value of the existing key, *instead of adding a new key/value pair*. Not only will duplicate hash keys simply not work as a way to store information, it just doesn't make sense.
 
@@ -209,3 +209,5 @@ puts shipping_manifest
 Well done!
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/hash-overview-readme' title='Hashes'>Hashes</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/hash-overview-readme'>Introduction to Hashes</a> on Learn.co and start learning to code for free.</p>
