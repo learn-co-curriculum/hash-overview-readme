@@ -28,7 +28,7 @@ Imagine a grocery list: you need to go to the store and buy milk, eggs and bread
 groceries = ["milk", "eggs", "bread"]
 ```
 
-What happens when your list expands to include your other errands? Let's say you need to go the grocery store, the pharmacy, and the stationary store (you've been using up a lot of paper as you take copious notes on learning to code).
+What happens when your list expands to include your other errands? Let's say you need to go the grocery store, the pharmacy, and the stationery store (you've been using up a lot of paper as you take copious notes on learning to code).
 
 We could make one giant array that contains all of the items you need to buy:
 
@@ -38,7 +38,7 @@ stuff_i_need = ["milk", "eggs", "bread", "toothpaste", "band-aids", "paper", "pe
 
 This isn't very organized though. There is no way to distinguish the different categories of items.
 
-This is where hashes come in. Hashes store data in an associated manner. With a hash, we can group our data into the necessary categories of "grocery", "pharmacy", and "stationary".
+This is where hashes come in. Hashes store data in an associated manner. With a hash, we can group our data into the necessary categories of "grocery", "pharmacy", and "stationery".
 
 Hashes allow us to store named, or associated, data. Think of a dictionary or an address book. This allows us to store more complex collections of information than the arrays we've seen so far.
 
@@ -208,4 +208,4 @@ puts shipping_manifest
 ```
 Well done!
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/hash-overview-readme' title='Hashes'>Hashes</a> on Learn.co and start learning to code for free.</p>
+<p class='util--hide'>View <a href='https://learn.co/lessons/hash-overview-readme'>Introduction to Hashes</a> on Learn.co and start learning to code for free.</p>
