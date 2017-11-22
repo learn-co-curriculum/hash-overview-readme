@@ -92,7 +92,7 @@ In our `the_rock` hash, we have two key/value pairs. We have a key of `"name"`, 
 
 #### Hash Keys and Uniqueness
 
-A key in a hash can be a string, a symbol, or an integer as long as you only use each key once. This is because, unlike arrays which store data in numbered indexes and access that data via the index numbers, hashes store data in keys and access that data by naming the key whose value we want to retrieve.
+A key in a hash can be a string, a symbol, or an integer as long as you only use each key once. This is because, unlike arrays, which store data in numbered indexes and access that data via the index numbers, hashes store data in keys and access that data by naming the key whose value we want to retrieve.
 
 If you try to add a second key that duplicates an existing key, you will overwrite the value of the existing key, *instead of adding a new key/value pair*. Not only will duplicate hash keys simply not work as a way to store information, it just doesn't make sense.
 
@@ -150,18 +150,18 @@ We can make a new hash via the literal constructor, just like arrays.
 
 ```ruby
 my_hash = {}
-  => {}
+#=> {}
 ```
 
 Initializing a hash that already contains data is a lot like initializing an array with data. We use the literal constructor:
 
 ```ruby
 pets = {"cat" => "Maru", "dog" => "Pluto"}
-  => {"cat" => "Maru", "dog" => "Pluto"}
+#=> {"cat" => "Maru", "dog" => "Pluto"}
 ```
 In the upcoming lab, you'll get a chance to practice making your own hashes.
 
-**Note:** You may see something called the "class constructor", `Hash.new`, if you read outside sources on Hashes. Don't worry about this for now, we'll learn more about it later.
+**Note:** You may see something called the "class constructor", `Hash.new`, if you read outside sources on Hashes. Don't worry about this for now. We'll learn more about it later.
 
 ## Retrieving Data from Hashes
 
@@ -171,7 +171,7 @@ Retrieving data from a hash is similar to retrieving data from an array, but ins
 pets = {"cat" => "Maru", "dog" => "Pluto"}
 
 pets["cat"]
-  => "Maru"
+#=> "Maru"
 ```
 Using `[]` is referred to as the **"bracket method".** It is actually a method just like any other––just like the methods you've been defining and like the methods available on objects such as Strings.
 
@@ -207,5 +207,3 @@ puts shipping_manifest
 # }
 ```
 Well done!
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/hash-overview-readme'>Introduction to Hashes</a> on Learn.co and start learning to code for free.</p>
