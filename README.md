@@ -226,3 +226,8 @@ puts shipping_manifest
 By the way, a hash that has counts of occurances is a common data structure in programming, useful for generating charts and more. They are called [Histograms](https://en.wikipedia.org/wiki/Histogram#Examples).
 
 Enjoy hashing it out!
+
+## Resources
+
+* [Intro to Hashes](http://ruby-for-beginners.rubymonstas.org/built_in_classes/hashes.html)
+* [RubyMonk Hashes](http://rubymonk.com/learning/books/1-ruby-primer/chapters/10-hashes-in-ruby/lessons/46-introduction-to-ruby-hashes)
