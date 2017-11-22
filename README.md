@@ -175,13 +175,29 @@ pets["cat"]
 ```
 Using `[]` is referred to as the **"bracket method".** It is actually a method just like any other––just like the methods you've been defining and like the methods available on objects such as Strings.
 
-## Adding Objects to Hashes
+## Adding Keys and Values to Hashes
 
 Adding items to hashes is easy. Instead of `<<` (the shovel method) that we use to add items to arrays, hashes use the **"bracket-equals"** method to add data. The full syntax for this takes the form of:
 
 ```ruby
-hash_name[new_key_name]= new_value
+person = {
+  "name" => "Corinna",
+  "age" => 36
+}
+
+# We can read Corinna's age with:
+person["age"] #=> 36
+
+# To add a property to the person hash:
+person["hometown"] = "Massena, NY"
+person["hometown"] #=> "Massena, NY"
+
+# Let's add another property
+person["favorite_thing"] = "Books"
+person["favorite_thing"] #=> "Books"
 ```
+
+The general syntax for adding a new value to a hash is: `hash["new_key"] = "New Value"`. `"new_key"` is the literal new key we added to the hash and we assigned the `"new_key"` a value of `"New Value"`.
 
 Let's think about the distinction between the `<<` method for arrays and the `[]=`, or bracket-equals, method of adding data to hashes.
 
@@ -206,4 +222,7 @@ puts shipping_manifest
 #   "jar of molasses" => 10
 # }
 ```
-Well done!
+
+By the way, a hash that has counts of occurances is a common data structure in programming, useful for generating charts and more. They are called [Histograms](https://en.wikipedia.org/wiki/Histogram#Examples).
+
+Enjoy hashing it out!
