@@ -188,11 +188,11 @@ person = {
 # We can read Corinna's age with:
 person["age"] #=> 36
 
-# To add a property to the person hash:
+# To add a key to the person hash:
 person["hometown"] = "Massena, NY"
 person["hometown"] #=> "Massena, NY"
 
-# Let's add another property
+# Let's add another key
 person["favorite_thing"] = "Books"
 person["favorite_thing"] #=> "Books"
 ```
