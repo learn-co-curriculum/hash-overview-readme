@@ -223,7 +223,7 @@ puts shipping_manifest
 # }
 ```
 
-By the way, a hash that has counts of occurances is a common data structure in programming, useful for generating charts and more. They are called [Histograms](https://en.wikipedia.org/wiki/Histogram#Examples).
+By the way, a hash that has counts of occurrences is a common data structure in programming, useful for generating charts and more. They are called [Histograms](https://en.wikipedia.org/wiki/Histogram#Examples).
 
 Enjoy hashing it out!
 
