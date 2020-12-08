@@ -12,8 +12,6 @@ them, retrieve data from, and add data to them.
 3.  Retrieve data from hashes using the "bracket" method.
 4.  Add data to hashes using the "bracket-equals" method.
 
-<iframe width="640" height="480" src="https://www.youtube.com/embed/0JSsFQGYaeA" frameborder="0" allowfullscreen></iframe>
-
 ### Why Hashes
 
 > Hashes are a lot like arrays: they have a bunch of slots that can point to various objects. However, in an array, the slots are lined up in a row, and each one is numbered (starting from zero). In a hash, the slots aren’t in a row (they are just sort of jumbled together) and you can use any object to refer to a slot, not just a number.
